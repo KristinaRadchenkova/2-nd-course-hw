@@ -123,7 +123,8 @@ span {
 }
 .card-game__img {
   border-radius: 30px;
-  height: 314px;
+  width: 100%;
+  height: auto;
 }
 .card-game__overlay {
   padding: 36px 32px;
@@ -145,4 +146,71 @@ span {
   line-height: 39px;
   letter-spacing: 0px;
   text-align: left;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .top__content {
+    align-items: center;
+  }
+  .top__heading {
+    font-size: 50px;
+    line-height: 52px;
+    text-align: center;
+  }
+  .top__text {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+  }
+  .top__btn {
+    width: 285px;
+    margin-bottom: 182px;
+  }
+  .about-games__heading {
+    font-size: 40px;
+    line-height: 49px;
+    text-align: center;
+  }
+  .about-games__text {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+  }
+  .card-game {
+    -moz-column-gap: 32px;
+         column-gap: 32px;
+  }
+  .card-game__item {
+    grid-column: span 4;
+  }
+  .card-game__text {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: left;
+  }
+}
+@media (max-width: 767px) {
+  .top__content {
+    align-items: center;
+  }
+  .top__heading {
+    font-size: 40px;
+    line-height: 49px;
+    text-align: center;
+  }
+  .top__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+  }
+  .top__btn {
+    width: 285px;
+    margin-bottom: 182px;
+  }
+  .games {
+    visibility: hidden;
+  }
 }/*# sourceMappingURL=style.css.map */
