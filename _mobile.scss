@@ -23,9 +23,8 @@
     }
 }
 
-.card-game__text {
-    font-size: 16px;
-    line-height: 19px;
+.card-game__item {
+    grid-column: span 8;
     }
 
 .games {
