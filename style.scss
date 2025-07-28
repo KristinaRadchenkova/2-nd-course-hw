@@ -163,14 +163,131 @@ span {
     letter-spacing: 0px;
     text-align: left;
   }
-
-
-    
-
 }
 
-@import 'tablet';
+
+.games-mini {
+  padding-bottom: 144px;
+  background: rgb(32, 32, 39);
+  border-top: 1px solid #99d003;
+  }
+
+.about-mini {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: inherit;
+
+    &__heading {
+      color: rgb(255, 255, 255);
+      font-size: 64px;
+      font-weight: 700;
+      line-height: 78px;
+      letter-spacing: 0px;
+      text-align: left;
+      margin-top: 46px;
+      margin-bottom: 72px;
+    }
+}
+
+.card-game-mini {
+    display: grid;
+    row-gap: 32px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    align-items: start;
+
+  &__item {
+    border-radius: 45px;
+    grid-column: span 12;
+    background-color:#FFFFFF;
+    text-decoration: none;
+  }
+
+  &__img {
+    border-radius: 45px;
+    width: 713px;
+    height: auto;
+  }
+
+  &__overlay {
+    padding: 48px;
+    width: 600px;
+  }
+
+  &__text {
+    color: rgb(32, 32, 39);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 59px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+
+  &__description {
+    color: rgb(32, 32, 39);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-top: 24px;
+    margin-bottom: 36px;
+  }
+
+  &__btn {
+    color: rgb(255, 255, 255);
+    font-family: inherit;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 141.69%;
+    letter-spacing: 0%;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 60px;
+    background: rgb(32, 32, 39);
+    padding: 16px 76px;
+  }
+
+  &__btn:hover {
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    border: rgb(0, 0, 0) 1px solid;
+  }
+}
+
+.card-mini {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+  
+    &_reverse {
+      flex-direction: row;
+    }
+}
+
+.footer {
+  background: rgb(189, 237, 53);
+  padding: 61px;
+  display: flex;
+  justify-content: space-around;
+
+  &__heading {
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+}
+
+
 @import 'mobile';
+@import 'tablet';
+
 
 
 
