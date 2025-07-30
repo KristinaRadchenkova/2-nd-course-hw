@@ -7,7 +7,7 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
-.center {
+.centered {
     padding-left: calc(50% - 600px);
     padding-right: calc(50% - 600px);
 }
@@ -75,35 +75,32 @@ span {
 .games {
   padding-bottom: 50px;
   background: rgb(32, 32, 39);
-
-}
-
-.about-games {
+  &__about{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     gap: 24px;
+    }
 
-    &__heading {
+  &__heading {
+    color: rgb(255, 255, 255);
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-top: 94px;
+  }
+
+  &__text {
       color: rgb(255, 255, 255);
-      font-size: 64px;
-      font-weight: 700;
-      line-height: 78px;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 32px;
       letter-spacing: 0px;
       text-align: left;
-      margin-top: 94px;
-    }
-
-    &__text {
-        color: rgb(255, 255, 255);
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 32px;
-        letter-spacing: 0px;
-        text-align: left;
-        margin-bottom: 72px;
-
-    }
+      margin-bottom: 72px;
+  }
 }
 
 .card-game {
@@ -170,24 +167,24 @@ span {
   padding-bottom: 144px;
   background: rgb(32, 32, 39);
   border-top: 1px solid #99d003;
-  }
-
-.about-mini {
+  
+  &__about {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     background: inherit;
+  }
 
-    &__heading {
-      color: rgb(255, 255, 255);
-      font-size: 64px;
-      font-weight: 700;
-      line-height: 78px;
-      letter-spacing: 0px;
-      text-align: left;
-      margin-top: 46px;
-      margin-bottom: 72px;
-    }
+  &__heading {
+    color: rgb(255, 255, 255);
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-top: 46px;
+    margin-bottom: 72px;
+  }
 }
 
 .card-game-mini {

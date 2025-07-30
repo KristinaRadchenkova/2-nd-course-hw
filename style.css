@@ -7,7 +7,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.center {
+.centered {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
 }
@@ -70,14 +70,13 @@ span {
   padding-bottom: 50px;
   background: rgb(32, 32, 39);
 }
-
-.about-games {
+.games__about {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   gap: 24px;
 }
-.about-games__heading {
+.games__heading {
   color: rgb(255, 255, 255);
   font-size: 64px;
   font-weight: 700;
@@ -86,7 +85,7 @@ span {
   text-align: left;
   margin-top: 94px;
 }
-.about-games__text {
+.games__text {
   color: rgb(255, 255, 255);
   font-size: 24px;
   font-weight: 400;
@@ -153,14 +152,13 @@ span {
   background: rgb(32, 32, 39);
   border-top: 1px solid #99d003;
 }
-
-.about-mini {
+.games-mini__about {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   background: inherit;
 }
-.about-mini__heading {
+.games-mini__heading {
   color: rgb(255, 255, 255);
   font-size: 64px;
   font-weight: 700;
@@ -281,6 +279,32 @@ span {
   .games {
     display: none;
   }
+  .games-mini__heading {
+    font-size: 40px;
+    line-height: 49px;
+  }
+  .card-mini {
+    display: flex;
+    flex-direction: column;
+  }
+  .card-game-mini__img {
+    width: auto;
+  }
+  .card-game-mini__text {
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .card-game-mini__description {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .card-game-mini__btn {
+    font-size: 16px;
+    display: block;
+  }
+  .card-game-mini__overlay {
+    width: auto;
+  }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .top__content {
@@ -301,12 +325,12 @@ span {
     width: 285px;
     margin-bottom: 182px;
   }
-  .about-games__heading {
+  .games__heading {
     font-size: 40px;
     line-height: 49px;
     text-align: center;
   }
-  .about-games__text {
+  .games__text {
     font-size: 24px;
     font-weight: 400;
     line-height: 24px;
@@ -323,5 +347,9 @@ span {
     font-size: 18px;
     line-height: 22px;
     text-align: left;
+  }
+  .card-game-mini__text {
+    font-size: 42px;
+    line-height: 47px;
   }
 }/*# sourceMappingURL=style.css.map */

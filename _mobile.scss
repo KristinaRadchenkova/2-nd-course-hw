@@ -31,4 +31,36 @@
     display: none;
 }
 
+.games-mini {
+    &__heading {
+        font-size: 40px;
+        line-height: 49px;
+    }
+}
+
+.card-mini {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-game-mini {
+    &__img {
+        width: auto;
+    }
+    &__text {
+        font-size: 32px;
+        line-height: 39px;
+    }
+    &__description {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    &__btn {
+        font-size: 16px;
+        display: block;
+    }
+    &__overlay {
+        width: auto;
+    }
+}
 }
