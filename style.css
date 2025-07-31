@@ -282,6 +282,8 @@ span {
   .games-mini__heading {
     font-size: 40px;
     line-height: 49px;
+    margin-left: 16px;
+    margin-right: 16px;
   }
   .card-mini {
     display: flex;
