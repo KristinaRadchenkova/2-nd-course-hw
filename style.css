@@ -305,6 +305,10 @@ span {
   .card-game-mini__overlay {
     width: auto;
   }
+  .card-game-mini__item {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .top__content {
@@ -351,5 +355,9 @@ span {
   .card-game-mini__text {
     font-size: 42px;
     line-height: 47px;
+  }
+  .card-game-mini__item {
+    margin-left: 16px;
+    margin-right: 16px;
   }
 }/*# sourceMappingURL=style.css.map */
