@@ -22,7 +22,7 @@
     }
 }
 
-.about-games {
+.games {
     &__heading {
         font-size: 40px;
         line-height: 49px;
@@ -34,7 +34,6 @@
         line-height: 24px;
         text-align: center;
     }
-
 }
 
 .card-game {
@@ -48,6 +47,17 @@
         font-size: 18px;
         line-height: 22px;
         text-align: left;
+    }
+}
+
+.card-game-mini {
+    &__text {
+        font-size: 42px;
+        line-height: 47px;
+    }
+    &__item {
+        margin-left: 16px;
+        margin-right: 16px;
     }
 }
 }
