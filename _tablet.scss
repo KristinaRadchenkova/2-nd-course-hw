@@ -4,11 +4,25 @@
     &__content {
         align-items: center;
     }
-
+    &__content::before {
+        content: "";
+        width: 235px;
+        height: 238px;
+        background-size: cover;
+        position: absolute;
+        top: -92px;
+        left: 220px;
+        z-index: 0;
+        background-image: url(img/topstarmobile.svg);
+    }
     &__heading {
         font-size: 50px;
         line-height: 52px;
         text-align: center;
+    }
+    &__heading::before {
+        bottom: -325px;
+        right: 240px;
     }
     &__text {
         font-size: 24px;
@@ -16,10 +30,16 @@
         line-height: 24px;
         text-align: center;
     }
+    &__text::after {
+        bottom: 86px;
+        width: 51px;
+        height: 51px;
+    }
     &__btn {
         width: 285px;
         margin-bottom: 182px;
     }
+
 }
 
 .games {
@@ -59,5 +79,9 @@
         margin-left: 16px;
         margin-right: 16px;
     }
+}
+
+.card-game-mini::after {
+display: none; 
 }
 }

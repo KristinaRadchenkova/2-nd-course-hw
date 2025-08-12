@@ -15,6 +15,7 @@ body {
 .top{ 
     background: rgb(225, 255, 143);
     height: 800px;
+    overflow: hidden;
 
     &__heading {
     color: rgb(32, 32, 39);
@@ -25,12 +26,63 @@ body {
     text-align: left;
     margin-top: 196px;
     margin-bottom: 24px;
+    position: relative;
     }
+  
+    &__heading::after {
+    content: "";
+    width: 35px;
+    height: 35px;
+    background-size: cover;
+    position: absolute;
+    top: -138px;
+    left: 40px;
+    z-index: 0;
+    background-image: url(img/topstar2.svg);
+    }
+
+    &__heading::before {
+    content: "";
+    width: 37px;
+    height: 37px;
+    background-size: cover;
+    position: absolute;
+    bottom: -224px;
+    right: 355px;
+    z-index: 0;
+    background-image: url(img/topstar3.svg);
+    }
+
 
     &__content {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    position: relative;
+    }
+
+    &__content::before {
+    content: "";
+    width: 1074px;
+    height: 1130px;
+    background-size: cover;
+    position: absolute;
+    top: -333px;
+    left: 715px;
+    z-index: 0;
+    background-image: url(img/topstar.svg);
+    }
+
+    &__content::after {
+    content: "";
+    width: 57px;
+    height: 57px;
+    background-size: cover;
+    position: absolute;
+    top: 94px;
+    left: -60px;
+    z-index: 0;
+    background-image: url(img/topstar1.svg);
     }
 
     &__text {
@@ -41,6 +93,18 @@ body {
     letter-spacing: 0px;
     text-align: left;
     margin-bottom: 48px;
+    }
+
+    &__text::after {
+    content: "";
+    width: 83px;
+    height: 83px;
+    background-size: cover;
+    position: absolute;
+    bottom: 149px;
+    right: 252px;
+    z-index: 0;
+    background-image: url(img/topstar4.svg);
     }
 
     &__btn {
@@ -75,12 +139,39 @@ span {
 .games {
   padding-bottom: 50px;
   background: rgb(32, 32, 39);
+  overflow: hidden;
   &__about{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     gap: 24px;
-    }
+    position: relative;
+  }
+
+  &__about::after {
+    content: "";
+    width: 584px;
+    height: 584px;
+    background-size: cover;
+    position: absolute;
+    top: 110px;
+    right: -247px;
+    z-index: 0;
+    background-image: url(img/mainstar.svg);
+  }
+
+  &__about::before {
+    content: "";
+    width: 31px;
+    height: 31px;
+    background-size: cover;
+    position: absolute;
+    bottom: -445px;
+    left: -62px;
+    z-index: 0;
+    background-image: url(img/mainstar1.svg);
+  }
+
 
   &__heading {
     color: rgb(255, 255, 255);
@@ -109,6 +200,7 @@ span {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
     align-items: start;
+    position: relative;
 
   &__item {
     border-radius: 30px;
@@ -162,17 +254,56 @@ span {
   }
 }
 
+.card-game::after {
+  content: "";
+  width: 55px;
+  height: 55px;
+  background-size: cover;
+  position: absolute;
+  top: 473px;
+  left: -52px;
+  z-index: 0;
+  background-image: url(img/mainstar2.svg);
+}
+
 
 .games-mini {
   padding-bottom: 144px;
   background: rgb(32, 32, 39);
   border-top: 1px solid #99d003;
+  overflow: hidden;
   
   &__about {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     background: inherit;
+    position: relative;
+  }
+
+
+  &__about::before {
+    content: "";
+    width: 35px;
+    height: 35px;
+    background-size: cover;
+    position: absolute;
+    top: 93px;
+    right: 9px;
+    z-index: 0;
+    background-image: url(img/mainstar1.svg);
+  }
+
+  &__about::after {
+    content: "";
+    width: 69px;
+    height: 69px;
+    background-size: cover;
+    position: absolute;
+    top: 132px;
+    right: -67px;
+    z-index: 0;
+    background-image: url(img/mainstar2.svg);
   }
 
   &__heading {
@@ -193,6 +324,7 @@ span {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
     align-items: start;
+    position: relative;
 
   &__item {
     border-radius: 45px;
@@ -254,6 +386,30 @@ span {
   }
 }
 
+.card-game-mini::before {
+  content: "";
+  width: 41px;
+  height: 41px;
+  background-size: cover;
+  position: absolute;
+  bottom: -104px;
+  right: 14px;
+  z-index: 0;
+  background-image: url(img/mainstar1.svg);
+}
+
+.card-game-mini::after {
+  content: "";
+  width: 69px;
+  height: 69px;
+  background-size: cover;
+  position: absolute;
+  bottom: -73px;
+  right: -63px;
+  z-index: 0;
+  background-image: url(img/mainstar2.svg);
+}
+
 .card-mini {
     display: flex;
     flex-direction: row-reverse;
@@ -270,7 +426,7 @@ span {
   padding: 61px;
   display: flex;
   justify-content: space-around;
-
+ 
   &__heading {
     color: rgb(0, 0, 0);
     font-size: 24px;
@@ -278,6 +434,7 @@ span {
     line-height: 29px;
     letter-spacing: 0px;
     text-align: center;
+    position: relative;
   }
 }
 
