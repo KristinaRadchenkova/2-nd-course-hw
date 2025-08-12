@@ -93,10 +93,13 @@ body {
   height: 83px;
   background-size: cover;
   position: absolute;
-  bottom: 149px;
+  bottom: -130px;
   right: 252px;
   z-index: 0;
   background-image: url(img/topstar4.svg);
+}
+.top__link {
+  text-decoration: none;
 }
 .top__btn {
   color: rgb(255, 255, 255);
@@ -107,12 +110,9 @@ body {
   letter-spacing: 0%;
   text-align: center;
   box-sizing: border-box;
-  border: 1px solid rgb(32, 32, 39);
   border-radius: 60px;
   background: rgb(32, 32, 39);
-  padding: 16px 28px;
-  width: 247px;
-  margin-bottom: 246px;
+  padding: 16px 76px;
   cursor: pointer;
 }
 .top__btn:hover {
@@ -431,7 +431,7 @@ span {
     background-size: cover;
     position: absolute;
     top: -138px;
-    left: 95px;
+    left: -5px;
   }
   .top__heading::before {
     right: 61px;
@@ -446,7 +446,7 @@ span {
     text-align: center;
   }
   .top__text::after {
-    bottom: 86px;
+    bottom: -125px;
     right: 13px;
     width: 41px;
     height: 41px;
@@ -534,7 +534,7 @@ span {
     text-align: center;
   }
   .top__text::after {
-    bottom: 86px;
+    bottom: -125px;
     width: 51px;
     height: 51px;
   }

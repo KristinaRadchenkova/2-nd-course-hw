@@ -101,10 +101,14 @@ body {
     height: 83px;
     background-size: cover;
     position: absolute;
-    bottom: 149px;
+    bottom: -130px;
     right: 252px;
     z-index: 0;
     background-image: url(img/topstar4.svg);
+    }
+
+    &__link {
+    text-decoration: none;
     }
 
     &__btn {
@@ -116,12 +120,9 @@ body {
     letter-spacing: 0%;
     text-align: center;
     box-sizing: border-box;
-    border: 1px solid rgb(32, 32, 39);
     border-radius: 60px;
     background: rgb(32, 32, 39);
-    padding: 16px 28px;
-    width: 247px;
-    margin-bottom: 246px;
+    padding: 16px 76px;
     cursor: pointer;
     }
     
