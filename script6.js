@@ -1,6 +1,6 @@
 // Задание 1
 
-let array = [1, 5, 4, 10, 0, 3];
+const array = [1, 5, 4, 10, 0, 3];
 
 for (let i = 0; i < array.length; i++) {
     alert(array[i]);
@@ -10,17 +10,17 @@ for (let i = 0; i < array.length; i++) {
 }
 
 // Задание 2
-let array2 = [1, 5, 4, 10, 0, 3];
+const array2 = [1, 5, 4, 10, 0, 3];
 alert (array2.indexOf(4))
 
 // Задание 3
 
-let array3 = [1, 3, 5, 10, 20];
+const array3 = [1, 3, 5, 10, 20];
 alert (array3.join (' '));
 
 // Задание 4
 
-let array4 = [];
+const array4 = [];
 for (let i = 0; i < 3; i++) {
     array4[i] = [];
     for (let j = 0; j < 3; j++) {
@@ -31,22 +31,20 @@ console.log(array4);
 
 // Задание 5
 
-array5 = [1, 1, 1];
-for (let i = 0; i < 3; i++) {
-    array5.push(2);
-}
+const array5 = [1, 1, 1];
+newArr = array5.push(2, 2, 2);
 console.log(array5);
 
 // Задание 6
 
-array6 = [9, 8, 7, 'a', 6, 5];
+const array6 = [9, 8, 7, 'a', 6, 5];
 array6.sort();
 array6.pop();
 console.log(array6);
 
 // Задание 7
 
-array7 = [9, 8, 7, 6, 5];
+const array7 = [9, 8, 7, 6, 5];
 let answer = Number(prompt("Угадайте число"));
 if (array7.includes(answer)) {
     alert('Угадал')
@@ -56,7 +54,7 @@ if (array7.includes(answer)) {
 
 // Задание 8
 
-let array8 = 'abcdef';
+const array8 = 'abcdef';
 alert(array8.split('').reverse().join(''))
 
 // Задание 9
@@ -74,22 +72,16 @@ for (let i = 0; i < array10.length - 1; i++) {
 
 // Задание 11
 
-function squareNum (nums) {
-    for (let i = 0; i < nums.length; i++) {
-        nums[i] = nums[i] ** 2;
-    }
-    return nums;
+function squareNum(nums) {
+    return nums.map(num => num ** 2);
 }
 
 console.log(squareNum([1, 2, 3, 4, 5]));
 
 // Задание 12
 
-function lenArr (str) {
-    for (let i = 0; i < str.length; i++) {
-        str[i] = str[i].length;
-    }
-    return str;
+function lenArr(str) {
+    return str.map(item => item.length);
 }
 
 console.log(lenArr(['wbhhe', 'wenqw', '23']));
@@ -105,28 +97,28 @@ console.log(negativeNum(array13));
 
 // Задание 14
 
-const arraw14 = [];
+const array14 = [];
 for (let i = 0; i < 10; i++) {
     let num1 = Math.floor(Math.random() * 10) + 1;
-    arraw14.push(num1);
+    array14.push(num1);
 }
-console.log(arraw14);
+console.log(array14);
 
-const arrawEven = arraw14.filter(item => item % 2 === 0);
-console.log(arrawEven);
+const arrayEven = array14.filter(item => item % 2 === 0);
+console.log(arrayEven);
 
 // Задание 15
 
 let summ = 0;
-const arraw15 = [];
+const array15 = [];
 for (let i = 0; i < 6; i++) {
     let num1 = Math.floor(Math.random() * 10) + 1;
-    arraw15.push(num1);
+    array15.push(num1);
     summ += num1;
  
 }
 
-    console.log(arraw15);
+    console.log(array15);
 
-    average = summ / arraw15.length;
+    average = summ / array15.length;
     console.log(average);
