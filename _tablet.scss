@@ -4,11 +4,25 @@
     &__content {
         align-items: center;
     }
-
+    &__content::before {
+        content: "";
+        width: 235px;
+        height: 238px;
+        background-size: cover;
+        position: absolute;
+        top: -92px;
+        left: 220px;
+        z-index: 0;
+        background-image: url(img/topstarmobile.svg);
+    }
     &__heading {
         font-size: 50px;
         line-height: 52px;
         text-align: center;
+    }
+    &__heading::before {
+        bottom: -325px;
+        right: 240px;
     }
     &__text {
         font-size: 24px;
@@ -16,13 +30,19 @@
         line-height: 24px;
         text-align: center;
     }
+    &__text::after {
+        bottom: -125px;
+        width: 51px;
+        height: 51px;
+    }
     &__btn {
         width: 285px;
         margin-bottom: 182px;
     }
+
 }
 
-.about-games {
+.games {
     &__heading {
         font-size: 40px;
         line-height: 49px;
@@ -34,7 +54,6 @@
         line-height: 24px;
         text-align: center;
     }
-
 }
 
 .card-game {
@@ -49,5 +68,20 @@
         line-height: 22px;
         text-align: left;
     }
+}
+
+.card-game-mini {
+    &__text {
+        font-size: 42px;
+        line-height: 47px;
+    }
+    &__item {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+}
+
+.card-game-mini::after {
+display: none; 
 }
 }

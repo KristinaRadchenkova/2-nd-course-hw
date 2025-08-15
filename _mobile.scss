@@ -5,10 +5,45 @@
         align-items: center;
     }
 
+    &__content::before {
+        content: "";
+        width: 235px;
+        height: 238px;
+        background-size: cover;
+        position: absolute;
+        top: -92px;
+        left: 220px;
+        z-index: 0;
+        background-image: url(img/topstarmobile.svg);
+    }
+
+    &__content::after {
+        width: 35px;
+        height: 35px;
+        left: 37px;
+    }
+
     &__heading {
         font-size: 40px;
         line-height: 49px;
         text-align: center;
+    }
+
+    &__heading::after {
+        content: "";
+        width: 21px;
+        height: 21px;
+        background-size: cover;
+        position: absolute;
+        top: -138px;
+        left: -5px;
+    }
+
+    &__heading::before {
+        right: 61px;
+        width: 18px;
+        height: 18px;
+        bottom: -273px;
     }
 
     &__text {
@@ -17,10 +52,19 @@
         line-height: 20px;
         text-align: center;
     }
+
+    &__text::after {
+        bottom: -125px;
+        right: 13px;
+        width: 41px;
+        height: 41px;
+    }
+
     &__btn {
         width: 285px;
         margin-bottom: 182px;
     }
+
 }
 
 .card-game__item {
@@ -29,6 +73,56 @@
 
 .games {
     display: none;
+}
+
+.games-mini {
+    &__heading {
+        font-size: 40px;
+        line-height: 49px;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+}
+
+.card-mini {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-game-mini {
+    &__img {
+        width: auto;
+    }
+    &__text {
+        font-size: 32px;
+        line-height: 39px;
+    }
+    &__description {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    &__btn {
+        font-size: 16px;
+        display: block;
+    }
+    &__overlay {
+        width: auto;
+    }
+    &__item {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+}
+
+
+.games__about::before,
+.games__about::after,
+.card-game::after,
+.games-mini__about::before,
+.games-mini__about::after,
+.card-game-mini::after,
+.card-game-mini::before {
+display: none; 
 }
 
 }
