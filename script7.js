@@ -96,9 +96,9 @@ let month = arrMonth[date.getMonth()];
 let year = date.getFullYear();
 let week = arrWeek[date.getDay()];
 
-const hours = date.getHours();
-const minutes = date.getMinutes();
-const seconds = date.getSeconds();
+let hours = date.getHours();
+let minutes = date.getMinutes();
+let seconds = date.getSeconds();
 
 if (hours < 10) {
     hours = '0' + hours;
