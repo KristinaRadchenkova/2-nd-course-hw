@@ -94,7 +94,7 @@
     
 
         
-    <div class="card-game-mini center">
+    <div id="color-block" class="card-game-mini center">
     <a href="index.html" class="card-game-mini__item">
         <article class="card-mini" id="guess-number-mini1">
             <img class="card-game-mini__img" src="img/1-guess.jpeg" alt="">
@@ -151,7 +151,7 @@
             <div class="card-game-mini__overlay">
                 <p class="card-game-mini__text">Генератор <br> случайных <br> цветов</p>
                 <p class="card-game-mini__description">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
-                <span class="card-game-mini__btn">Играть!</span>
+                <span class="card-game-mini__btn" id="changeColorButton">Играть!</span>
             </div>
         </article></a>
     </div>
@@ -160,7 +160,25 @@
     <script src="game3.js"></script>
     <script src="game4.js"></script>
     <script src="game5.js"></script>
-    <script src="script8.js"></script>
+    <script src="game6.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const changeColorButton = document.getElementById('changeColorButton');
+        changeColorButton.addEventListener('click', function() {
+            const randomColor = getRandomColor();
+            document.querySelector('.card-game-mini').style.backgroundColor = randomColor;
+        });
+
+        function getRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+    });
+    </script>
 
 </section>
 
