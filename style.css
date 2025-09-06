@@ -120,6 +120,34 @@ body {
   background: rgb(255, 255, 255);
 }
 
+.scroll-container {
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  background: rgb(188, 236, 48);
+}
+
+.scroll-content {
+  display: flex;
+  animation: scrollLeft 20s linear infinite;
+  white-space: nowrap;
+}
+
+.game-title {
+  margin-right: 50px;
+  color: rgb(32, 32, 39);
+  font-family: inherit;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 37px;
+  letter-spacing: 4%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
 span {
   font-weight: bold;
 }
@@ -455,6 +483,14 @@ span {
     width: 285px;
     margin-bottom: 182px;
   }
+  .game-title {
+    font-size: 16px;
+    margin-right: 27.4px;
+  }
+  .game-title svg {
+    width: 19.34px;
+    height: 19.34px;
+  }
   .card-game__item {
     grid-column: span 8;
   }
@@ -541,6 +577,14 @@ span {
   .top__btn {
     width: 285px;
     margin-bottom: 182px;
+  }
+  .game-title {
+    font-size: 20px;
+    margin-right: 30px;
+  }
+  .game-title svg {
+    width: 27px;
+    height: 27px;
   }
   .games__heading {
     font-size: 40px;

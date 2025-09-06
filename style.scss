@@ -133,6 +133,33 @@ body {
 
 }
 
+.scroll-container {
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(50px);
+    background: rgba(188, 236, 48, 1);
+}
+
+.scroll-content {
+    display: flex;
+    animation: scrollLeft 20s linear infinite;
+    white-space: nowrap;
+}
+
+.game-title {
+  margin-right: 50px;
+  color: rgba(32, 32, 39, 1);
+  font-family: inherit;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 37px;
+  letter-spacing: 4%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
 span {
     font-weight: bold;
 }
