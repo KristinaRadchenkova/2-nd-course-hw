@@ -21,12 +21,19 @@ function quiz() {
 
     let score = 0;
     for (let i = 0; i < quiz.length; i++) {
-        let answer = parseInt(prompt(`${quiz[i].question}\n\n${quiz[i].options.join("\n")}\n\nВведите номер правильного ответа`));
+        let answer = prompt(`${quiz[i].question}\n\n${quiz[i].options.join("\n")}\n\nВведите номер правильного ответа (или нажмите "Отмена" для выхода)`);
+        
+        if (answer === null) {
+            alert("Вы вышли из викторины. Спасибо за участие!");
+            return;
+        }
+
+        answer = parseInt(answer);
+
         if (answer === quiz[i].correctAnswer) {
             alert("Правильно!");
             score++;
-        }
-        else {
+        } else {
             alert("Неправильно!");
         }
     }

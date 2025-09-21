@@ -1,5 +1,5 @@
 function gameTwo() {
-    alert ('Добро пожаловать в игру "Простая арифметика"!');
+    alert('Добро пожаловать в игру "Простая арифметика"!');
 
     function generateTask() {
         let num1 = Math.floor(Math.random() * 100) + 1;
@@ -8,7 +8,8 @@ function gameTwo() {
         let operation = operations[Math.floor(Math.random() * operations.length)];
 
         if (operation === '/') {
-            num2 = Math.floor(Math.random() * 99) + 1;}
+            num2 = Math.floor(Math.random() * 99) + 1;
+        }
 
         return { num1, num2, operation };
     }
@@ -31,11 +32,17 @@ function gameTwo() {
     let { num1: number1, num2: number2, operation: operat } = generateTask();
 
     let taskString = `${number1} ${operat} ${number2}`;
-
     let result = calculateResult(number1, number2, operat);
 
     while (true) {
-        let answer = Number(prompt(`Напишите ответ на задачу: ${taskString}`));
+        let input = prompt(`Напишите ответ на задачу: ${taskString}`);
+        
+        if (input === null) {
+            alert("Игра завершена. Спасибо за игру!");
+            break;
+        }
+
+        let answer = Number(input);
 
         if (Math.abs(answer - result) < 0.01) {
             alert('Правильно!');

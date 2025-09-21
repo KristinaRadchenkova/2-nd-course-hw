@@ -1,4 +1,11 @@
-function reverseString(str) {
+function reverseString() {
     let invertedStr = prompt('Введите текст');
-    alert(invertedStr.split('').reverse().join(''));
+    
+    if (invertedStr === null) {
+        alert("Игра завершена. Спасибо за игру!");
+        return;
+    }
+    
+    let reversedStr = invertedStr.split('').reverse().join('');
+    alert(reversedStr);
 }

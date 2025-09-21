@@ -3,7 +3,11 @@ const max = 100;
 const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
 
 function guessNumber() {
-    return parseInt(prompt("Введите число от 1 до 100"), 10);
+    const input = prompt("Введите число от 1 до 100");
+    if (input === null) {
+        return null;
+    }
+    return parseInt(input, 10);
 }
 
 function startGame() {
@@ -11,11 +15,14 @@ function startGame() {
     let guess;
     while (true) {
         guess = guessNumber();
+        if (guess === null) {
+            alert("Игра завершена. Спасибо за игру!");
+            break;
+        }
         if (guess === randomNumber) {
             alert("Поздравляю, вы угадали!");
             break;
-        }
-        else {
+        } else {
             alert(guess < randomNumber ? "Загаданное число больше" : "Загаданное число меньше");
         }
     }
