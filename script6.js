@@ -1,0 +1,124 @@
+// Задание 1
+
+const array = [1, 5, 4, 10, 0, 3];
+
+for (let i = 0; i < array.length; i++) {
+    alert(array[i]);
+    if (array[i] === 10) {
+        break;
+    }
+}
+
+// Задание 2
+const array2 = [1, 5, 4, 10, 0, 3];
+alert (array2.indexOf(4))
+
+// Задание 3
+
+const array3 = [1, 3, 5, 10, 20];
+alert (array3.join (' '));
+
+// Задание 4
+
+const array4 = [];
+for (let i = 0; i < 3; i++) {
+    array4[i] = [];
+    for (let j = 0; j < 3; j++) {
+        array4[i][j] = 1;
+    }
+}
+console.log(array4);
+
+// Задание 5
+
+const array5 = [1, 1, 1];
+newArr = array5.push(2, 2, 2);
+console.log(array5);
+
+// Задание 6
+
+const array6 = [9, 8, 7, 'a', 6, 5];
+array6.sort();
+array6.pop();
+console.log(array6);
+
+// Задание 7
+
+const array7 = [9, 8, 7, 6, 5];
+let answer = Number(prompt("Угадайте число"));
+if (array7.includes(answer)) {
+    alert('Угадал')
+} else {
+    alert('Не угадал')
+}
+
+// Задание 8
+
+const array8 = 'abcdef';
+alert(array8.split('').reverse().join(''))
+
+// Задание 9
+
+const array9 = [[1, 2, 3], [4, 5, 6]];
+combArray9 = [...array9[0], ...array9[1]];
+console.log(combArray9);
+
+// Задание 10
+
+const array10 = [1, 2, 8, 7, 3, 9, 5];
+for (let i = 0; i < array10.length - 1; i++) {
+    console.log(array10[i] + array10[i + 1]);
+}
+
+// Задание 11
+
+function squareNum(nums) {
+    return nums.map(num => num ** 2);
+}
+
+console.log(squareNum([1, 2, 3, 4, 5]));
+
+// Задание 12
+
+function lenArr(str) {
+    return str.map(item => item.length);
+}
+
+console.log(lenArr(['wbhhe', 'wenqw', '23']));
+
+// Задание 13
+
+function negativeNum (arr) {
+    return arr.filter(item => item < 0);
+}
+
+const array13 = [13, -8, -2, 6, -11, -14, 9, 15];
+console.log(negativeNum(array13));
+
+// Задание 14
+
+const array14 = [];
+for (let i = 0; i < 10; i++) {
+    let num1 = Math.floor(Math.random() * 10) + 1;
+    array14.push(num1);
+}
+console.log(array14);
+
+const arrayEven = array14.filter(item => item % 2 === 0);
+console.log(arrayEven);
+
+// Задание 15
+
+let summ = 0;
+const array15 = [];
+for (let i = 0; i < 6; i++) {
+    let num1 = Math.floor(Math.random() * 10) + 1;
+    array15.push(num1);
+    summ += num1;
+ 
+}
+
+    console.log(array15);
+
+    average = summ / array15.length;
+    console.log(average);

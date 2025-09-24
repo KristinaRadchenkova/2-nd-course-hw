@@ -1,0 +1,29 @@
+const min = 1;
+const max = 100;
+const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+
+function guessNumber() {
+    const input = prompt("Введите число от 1 до 100");
+    if (input === null) {
+        return null;
+    }
+    return parseInt(input, 10);
+}
+
+function startGame() {
+    alert('Добро пожаловать в игру "Угадай число!"');
+    let guess;
+    while (true) {
+        guess = guessNumber();
+        if (guess === null) {
+            alert("Игра завершена. Спасибо за игру!");
+            break;
+        }
+        if (guess === randomNumber) {
+            alert("Поздравляю, вы угадали!");
+            break;
+        } else {
+            alert(guess < randomNumber ? "Загаданное число больше" : "Загаданное число меньше");
+        }
+    }
+}
